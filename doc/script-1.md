@@ -1,0 +1,4 @@
+My name is Valoree Armstrong, and I'm a Full Stack Developer with a background that spans healthcare, education, and social services. For over 15 years, I worked at the intersection of people and complex systems — and that experience gave me something most developers don't have coming in: a deep understanding of how technology affects the people using it.
+I recently completed a rigorous Full Stack Developer program where I built production-ready applications using JavaScript, Java, React, and Node.js — across both web and mobile platforms.
+What sets me apart is that I don't just write code — I build solutions with the end user in mind. I bring professionalism, attention to detail, and cross-industry perspective to every project.
+I'm actively seeking opportunities where I can contribute as a Full Stack Developer and continue growing. I'd love to connect.
