@@ -2,3 +2,5 @@ My name is Valoree Armstrong, and I'm a Full Stack Developer with a background t
 I recently completed a rigorous Full Stack Developer program where I built production-ready applications using JavaScript, Java, React, and Node.js — across both web and mobile platforms.
 What sets me apart is that I don't just write code — I build solutions with the end user in mind. I bring professionalism, attention to detail, and cross-industry perspective to every project.
 I'm actively seeking opportunities where I can contribute as a Full Stack Developer and continue growing. I'd love to connect.
+
+Elevator Pitch #1 https://youtu.be/J4qLM1i_1f4
