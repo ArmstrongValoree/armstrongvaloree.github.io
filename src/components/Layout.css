@@ -1,0 +1,40 @@
+:root {
+  --color-bg: #0d1b2a;
+  --color-primary: #00bfff;
+  --color-text: #ffffff;
+  --color-text-muted: #a0aec0;
+  --color-footer-bg: #0a1628;
+  --color-header-bg: #0d1b2a;
+  --nav-height: 64px;
+  --mobile-nav-height: 60px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: var(--nav-height);
+  padding-bottom: var(--mobile-nav-height);
+}
+
+@media (min-width: 769px) {
+  .main-content {
+    padding-bottom: 0;
+  }
+}
