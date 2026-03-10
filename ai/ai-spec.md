@@ -7,27 +7,113 @@
 
 ---
 
-## 1. Project Identity & Scope
+## Project Identity
 
-### What This Project Is
-A personal portfolio website built with React and Vite, deployed to GitHub Pages. It serves as a professional showcase for Valoree Armstrong — a Full Stack Developer transitioning from healthcare, education, and social services administration.
+- **Project Name:** armstrongvaloree.github.io
+- **Short Description:** A personal portfolio website that showcases Valoree Armstrong as a Full Stack Developer, including her skills, projects, work history, and a contact form backed by Supabase.
+- **Project Type:** Static Website (React + Vite, deployed to GitHub Pages)
+
+---
+
+## Goal and Scope
+
+### Goal
+Build and deploy a professional personal portfolio website that demonstrates full stack development skills, integrates Supabase for contact form submissions and admin authentication, and is accessible live at `https://armstrongvaloree.github.io`.
 
 ### In Scope
-- A single-page React application with client-side routing
+- A React application scaffolded with Vite
+- Client-side routing with React Router DOM
 - A Home page, Portfolio page, Links page, Contact page, Login page, and Back Office page
 - Supabase integration for contact form submissions and admin authentication
 - Responsive design for desktop and mobile
-- Deployment to GitHub Pages via GitHub Actions
+- Automated deployment to GitHub Pages via GitHub Actions
 
 ### Out of Scope
 - No server-side rendering
 - No custom backend or REST API
 - No third-party CMS
 - No e-commerce or payment features
+- No jQuery or Axios
 
 ---
 
-## 2. Architecture & Repository Structure
+## Users and Use Cases
+
+- **Public Visitor:** Can view the Home, Portfolio, and Links pages, and submit a message through the Contact form
+- **Authenticated Admin:** Can access the Back Office by logging in via the secret Login route, view all submitted messages, delete messages, and log out
+
+---
+
+## Feature Index
+
+- `./ai/features/setup-deploy.feature.md`
+- `./ai/features/header-footer.feature.md`
+- `./ai/features/home-page.feature.md`
+- `./ai/features/portfolio-page.feature.md`
+- `./ai/features/link-page.feature.md`
+- `./ai/features/contact-page.feature.md`
+- `./ai/features/login-page.feature.md`
+- `./ai/features/back-office.feature.md`
+
+---
+
+## Pages / Screens / Routes
+
+| Route | Page | Purpose |
+|-------|------|---------|
+| `/` | Home | Landing page with introduction, technical skills, and soft skills |
+| `/portfolio` | Portfolio | Education, work experience, projects, and downloadable resume |
+| `/links` | Links | Curated list of links with images and descriptions |
+| `/contact` | Contact | Contact form that submits to Supabase messages table |
+| `/login` | Login | Secret admin login route, not in public navigation |
+| `/backoffice` | Back Office | Protected admin page to view and delete submitted messages |
+
+---
+
+## Data and Models
+
+### Database
+- **Type:** Supabase (PostgreSQL)
+
+### Messages Table
+| Column | Type | Notes |
+|--------|------|-------|
+| id | uuid | Primary key, auto-generated |
+| name | text | Required |
+| email | text | Required |
+| message | text | Required |
+| created_at | timestamp | Auto-generated |
+
+### Auth
+- Supabase Auth with email/password
+- Admin user: `admin@codeboxx.com` / `C0deB0xx4dm!n`
+- Admin user is pre-created in the Supabase dashboard, not via the app
+
+---
+
+## Tech Stack and Tools
+
+### Frontend
+- React 18
+- Vite
+- React Router DOM
+- CSS (mobile-first, with CSS custom properties)
+
+### Backend
+- No custom backend
+- Supabase handles database and authentication
+
+### Database
+- Supabase (PostgreSQL)
+
+### Tools / Libraries
+- Fetch API (no Axios)
+- GitHub Actions (CI/CD)
+- GitHub Pages (hosting)
+
+---
+
+## Repository Structure
 
 ```
 armstrongvaloree.github.io/
@@ -77,53 +163,52 @@ armstrongvaloree.github.io/
 
 ---
 
-## 3. Allowed Technologies & Constraints
+## Rules for the AI
 
-| Category | Technology |
-|----------|------------|
-| Framework | React 18 via Vite |
-| Language | JavaScript (JSX) |
-| Routing | React Router DOM |
-| Styling | CSS (no jQuery, no Axios) |
-| Backend/Auth | Supabase |
-| Deployment | GitHub Pages via GitHub Actions |
-| Mobile | Not applicable (web only for this module) |
-
-### Constraints
-- No jQuery
-- No Axios — use the native Fetch API for all HTTP requests
+- Use junior-friendly code with clear, readable variable and function names
+- Do not add features not listed in this specification or in the feature specification files
+- Do not use jQuery or Axios — use the Fetch API only
+- Do not use class components — use functional components only
+- Reuse existing files and components when possible
+- All Supabase interactions must go through `src/lib/supabaseClient.js`
+- Never commit the `.env` file
 - No direct commits to `main`
-- `.env` file must never be committed to GitHub
-- All Supabase secrets stored in GitHub repository settings as Actions secrets
+- Explain all changes briefly
 
 ---
 
-## 4. Coding Standards & Conventions
+## How to Run / Test the Project
 
-### File Naming
-- React components: PascalCase (e.g., `Header.jsx`, `BackOffice.jsx`)
-- Utility files: camelCase (e.g., `supabaseClient.js`)
-- Feature spec files: kebab-case (e.g., `home-page.feature.md`)
+### Install Dependencies
+```bash
+npm install
+```
 
-### Component Rules
-- Every component is a functional component
-- Props must have default values where applicable
-- No class components
+### Run Local Development Server
+```bash
+npm run dev
+```
+Open `http://localhost:5173` in your browser.
 
-### CSS Rules
-- Each component has its own CSS file where needed
-- CSS custom properties (variables) used for all theme-dependent colors
-- Mobile-first approach: base styles target mobile, media queries scale up to desktop
+### Build for Production
+```bash
+npm run build
+```
 
-### Git Conventions
-- Branch naming: `feature/feature-name` (e.g., `feature/home-page`)
-- Commit messages follow this format: `type: short description`
-  - Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
-- No direct commits to `main`
+### Deploy
+Push to the `main` branch. GitHub Actions will automatically build and deploy to `https://armstrongvaloree.github.io`.
+
+### Environment Variables
+Create a `.env` file at the root of the project:
+```
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+Add these same variables to GitHub repository settings under Settings → Secrets and variables → Actions.
 
 ---
 
-## 5. Global Definition of Done & Cross-Feature Rules
+## Definition of Done
 
 A feature is considered complete when ALL of the following are true:
 
@@ -133,7 +218,14 @@ A feature is considered complete when ALL of the following are true:
 - [ ] All interactive elements have visible feedback (hover, focus, disabled states)
 - [ ] All images have appropriate `alt` text for accessibility
 - [ ] The feature matches its acceptance criteria in its feature specification document
-- [ ] Code is clean, readable, and follows the conventions in Section 4
+- [ ] Code is clean, readable, and follows the coding standards below
+
+### Coding Standards
+- React components: PascalCase (e.g., `Header.jsx`, `BackOffice.jsx`)
+- Utility files: camelCase (e.g., `supabaseClient.js`)
+- Feature spec files: kebab-case (e.g., `home-page.feature.md`)
+- Branch naming: `feature/feature-name` (e.g., `feature/home-page`)
+- Commit messages: `type: short description` (types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`)
 
 ### Cross-Feature Rules
 - The Header and Footer must appear on every public page
