@@ -8,11 +8,10 @@
 
 ## Script
 
-Hi, my name is Valoree Armstrong, and I am a Full Stack Developer with a background in healthcare, education, and social services administration.
+Hi, I’m Valoree Armstrong. I’m a Full Stack Developer with a background in healthcare, education, and social services — fields where clear communication and problem‑solving are essential.
 
-I recently completed a Full Stack Developer bootcamp where I built web and mobile applications using the MERN stack, Spring Boot, and React Native — including a food delivery app and a social blogging platform — taking each project from concept to completion.
+I recently completed a full‑stack bootcamp where I built web and mobile applications using the MERN stack, Spring Boot, and React Native. Some of my favorite projects were a food delivery app and a social blogging platform, both of which I took from the initial idea all the way through deployment.
 
-What sets me apart is over 15 years of experience working directly with people across complex systems. I am a natural collaborator who knows how to work with diverse teams to get things done. I understand how technology impacts the end user, and I bring that perspective, along with professionalism and attention to detail, to every line of code I write.
+What really sets me apart is the 15+ years I’ve spent working directly with people in complex systems. I know how to collaborate, ask the right questions, and keep the end user in mind. That perspective shows up in the way I approach my code — with intention, clarity, and attention to detail.
 
-If you are looking for a developer who is ready to contribute, collaborate, and grow with your team, I would love to connect.
-
+If you’re looking for a developer who can contribute right away, communicate well, and grow with your team, I’d love to connect.
