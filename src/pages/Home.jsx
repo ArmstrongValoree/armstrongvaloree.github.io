@@ -1,3 +1,6 @@
+// AI-generated images created using Microsoft Designer (designer.microsoft.com) and NanoBanana
+// Images: home-hero.png, home-skills.png
+
 import { Link } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
 import heroImage from '../assets/home-hero.png'
