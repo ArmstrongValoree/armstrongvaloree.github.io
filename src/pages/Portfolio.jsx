@@ -13,34 +13,34 @@ const education = [
   },
   {
     year: "2004",
-    title: "Bachelor of Science — Health Services Administration",
-    institution: "Florida A&M University",
+    title: "Bachelor of Science — Criminal Justice",
+    institution: "Florida Metropolitan University",
     description:
-      "Foundational studies in healthcare systems, administration, policy, and human services management.",
+      "Foundational studies in criminal justice systems, law, policy, and public administration.",
   },
 ];
 
 const experience = [
   {
-    year: "2020 – 2025",
-    title: "Administrative Director",
-    institution: "Healthcare Organization",
+    year: "March 2026 – Present",
+    title: "Part-Time Student Success Coach (Contract)",
+    institution: "CodeBoxx Academy · Onsite",
     description:
-      "Led cross-functional teams, managed complex operational systems, and drove process improvements across multiple departments.",
+      "Provide part-time coaching and mentorship to full-stack development students, supporting their progress across the MERN stack, Spring Boot, and React Native curriculum. Guide learners through debugging, project development, and best practices in modern software engineering. Represent CodeBoxx Academy at community and recruiting events, engaging with prospective students and promoting the program's mission and values.",
   },
   {
-    year: "2015 – 2020",
-    title: "Education Program Coordinator",
-    institution: "Education Services",
+    year: "2023 – Present",
+    title: "Administrative Assistant (Remote)",
+    institution: "AQualiT Health · Jacksonville, FL",
     description:
-      "Designed and delivered educational programs, coordinated staff training, and managed community outreach initiatives.",
+      "Track and verify provider patient visits for accurate billing and compensation. Manage sensitive clinical and provider data with accuracy and confidentiality.",
   },
   {
-    year: "2008 – 2015",
-    title: "Social Services Case Manager",
-    institution: "Social Services Agency",
+    year: "2009 – 2022",
+    title: "Instructional Roles (K–6 Education)",
+    institution: "Pinellas County Schools · Orange County Public Schools · Imagine School",
     description:
-      "Provided case management services, connected clients with community resources, and maintained detailed administrative records.",
+      "Delivered inclusive instruction across general and special education classrooms. Served as grade-level lead and team mentor, integrating technology into virtual and hybrid learning environments.",
   },
 ];
 
@@ -50,24 +50,36 @@ const projects = [
     tech: ["React", "Vite", "Supabase", "GitHub Actions"],
     description:
       "A full stack personal portfolio site with authentication, a contact form with database persistence, and an authenticated back office for message management.",
+    link: "/",
+    linkLabel: "View Portfolio",
+    external: false,
   },
   {
     name: "CodeBloggs",
     tech: ["MongoDB", "Express", "React", "Node.js"],
     description:
       "A full stack social media blogging application with user authentication, post feeds, comment modals, admin dashboard, and responsive navigation.",
+    link: "https://github.com/armstrongvaloree",
+    linkLabel: "View on GitHub",
+    external: true,
   },
   {
     name: "Rocket Food Delivery",
     tech: ["Spring Boot", "MySQL", "React Native", "Expo"],
     description:
       "A mobile food delivery app with a Spring Boot REST API backend, JWT authentication, and a React Native frontend for browsing restaurants and placing orders.",
+    link: "https://github.com/armstrongvaloree",
+    linkLabel: "View on GitHub",
+    external: true,
   },
   {
     name: "Rocket Elevators Dashboard",
     tech: ["MongoDB", "Express", "React", "Chart.js"],
     description:
       "An admin dashboard for managing elevator agents and transactions, featuring JWT authentication, CRUD operations, and Chart.js data visualizations.",
+    link: "https://github.com/armstrongvaloree",
+    linkLabel: "View on GitHub",
+    external: true,
   },
 ];
 
@@ -181,6 +193,20 @@ function Portfolio() {
                       ))}
                     </div>
                     <p className="project-description">{project.description}</p>
+                    {project.external ? (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-link"
+                      >
+                        {project.linkLabel}
+                      </a>
+                    ) : (
+                      <a href={project.link} className="project-link">
+                        {project.linkLabel}
+                      </a>
+                    )}
                   </div>
                 ))}
               </div>
