@@ -7,6 +7,7 @@ function BackOffice() {
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedMessage, setSelectedMessage] = useState(null);
+  const [authChecked, setAuthChecked] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -20,6 +21,7 @@ function BackOffice() {
     if (!session) {
       navigate("/login");
     } else {
+      setAuthChecked(true);
       fetchMessages();
     }
   }
@@ -63,6 +65,8 @@ function BackOffice() {
       minute: "2-digit",
     });
   }
+
+  if (!authChecked) return null;
 
   return (
     <div className="backoffice-page">
