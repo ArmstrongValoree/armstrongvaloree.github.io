@@ -13,7 +13,7 @@ const links = [
   },
   {
     title: "LinkedIn",
-    url: "https://www.linkedin.com/in/valoreearmstrong",
+    url: "https://www.linkedin.com/in/valoree-armstrong-462511395",
     description:
       "Connect with me professionally. My LinkedIn highlights my transition from healthcare and education administration into full stack development.",
     icon: "💼",

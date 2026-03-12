@@ -166,7 +166,7 @@ function Contact() {
                   ✉️ armstrongvaloree@gmail.com
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/valoreearmstrong"
+                  href="https://www.linkedin.com/in/valoree-armstrong-462511395"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="contact-link"
