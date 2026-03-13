@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { MemoryRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
@@ -9,7 +9,7 @@ import BackOffice from "./pages/BackOffice";
 
 function App() {
   return (
-    <BrowserRouter>
+    <MemoryRouter>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
@@ -20,7 +20,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/backoffice" element={<BackOffice />} />
       </Routes>
-    </BrowserRouter>
+    </MemoryRouter>
   );
 }
 
