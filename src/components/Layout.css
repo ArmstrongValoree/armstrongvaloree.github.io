@@ -5,8 +5,22 @@
   --color-text-muted: #a0aec0;
   --color-footer-bg: #0a1628;
   --color-header-bg: #0d1b2a;
+  --color-card-bg: rgba(0, 191, 255, 0.05);
+  --color-card-border: rgba(0, 191, 255, 0.15);
   --nav-height: 64px;
   --mobile-nav-height: 60px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="light"] {
+  --color-bg: #f0f4f8;
+  --color-primary: #0077cc;
+  --color-text: #1a1a2e;
+  --color-text-muted: #4a5568;
+  --color-footer-bg: #dce3ea;
+  --color-header-bg: #ffffff;
+  --color-card-bg: rgba(0, 119, 204, 0.05);
+  --color-card-border: rgba(0, 119, 204, 0.2);
 }
 
 * {
@@ -19,6 +33,7 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .layout {
