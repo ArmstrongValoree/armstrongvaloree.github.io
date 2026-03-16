@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "home": "Nyumbani",
+    "portfolio": "Portfolio",
+    "links": "Viungo",
+    "contact": "Wasiliana"
+  },
+  "home": {
+    "name": "Valoree Armstrong",
+    "title": "Msanidi wa Full Stack",
+    "bio": "Mimi ni msanidi wa full stack mwenye uzoefu katika afya, elimu, na huduma za jamii. Baada ya miaka 15+ ya kufanya kazi katika makutano ya watu na mifumo ngumu, ninaleta mtazamo wa kipekee katika maendeleo ya programu — kwa kuweka mtumiaji wa mwisho katikati ya kila suluhisho ninalojenga.",
+    "technicalSkillsTitle": "Ujuzi wa Kiufundi",
+    "softSkillsTitle": "Nguvu & Vipaji",
+    "viewWork": "Tazama Kazi Zangu",
+    "getInTouch": "Wasiliana Nami",
+    "skills": {
+      "react": {
+        "name": "React & React Native",
+        "description": "Kujenga programu za wavuti na simu zenye nguvu na zinazoweza kukabiliana na mabadiliko kwa kutumia usanifu wa vipengele na hooks za kisasa za React."
+      },
+      "node": {
+        "name": "Node.js & Express",
+        "description": "Kuendeleza programu za upande wa seva zinazoweza kupanuka na API za RESTful zinazosaidia suluhisho za full stack."
+      },
+      "database": {
+        "name": "Usimamizi wa Hifadhidata",
+        "description": "Kubuni na kuuliza hifadhidata za uhusiano (MySQL) na NoSQL (MongoDB) kuhifadhi na kusimamia data za programu."
+      },
+      "java": {
+        "name": "Java & Spring Boot",
+        "description": "Kuunda huduma thabiti za backend na API za REST kwa kutumia Java na mfumo wa Spring Boot."
+      },
+      "auth": {
+        "name": "Uthibitisho & Usalama",
+        "description": "Kutekeleza uthibitisho salama wa watumiaji kwa kutumia tokeni za JWT na Supabase Auth kulinda data za programu."
+      }
+    },
+    "softSkills": {
+      "collaboration": {
+        "name": "Ushirikiano",
+        "description": "Zaidi ya miaka 15 ya uzoefu wa kufanya kazi na timu mbalimbali katika afya, elimu, na huduma za jamii kufikia malengo ya pamoja."
+      },
+      "problemSolving": {
+        "name": "Kutatua Matatizo",
+        "description": "Mwanafikira wa uchambuzi anayevunja changamoto ngumu kuwa hatua wazi na zinazoweza kufanywa — katika msimbo na maishani."
+      },
+      "communication": {
+        "name": "Mawasiliano",
+        "description": "Ustadi wa kutafsiri dhana za kiufundi kwa hadhira zisizo za kiufundi, kuziba pengo kati ya watu na teknolojia."
+      },
+      "attention": {
+        "name": "Makini kwa Undani",
+        "description": "Makini na kina katika kazi zote — kutoka kuandika msimbo safi na unaosomeka hadi kusimamia mifumo ngumu ya utawala."
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Muhtasari wa elimu yangu, historia ya kitaalamu, na miradi niliyojenga.",
+    "educationTitle": "Elimu",
+    "experienceTitle": "Uzoefu",
+    "projectsTitle": "Miradi",
+    "resumeTitle": "Wasifu",
+    "resumeText": "Pakua wasifu wangu ili kujifunza zaidi kuhusu historia na uzoefu wangu.",
+    "downloadResume": "Pakua Wasifu (PDF)",
+    "viewPortfolio": "Tazama Portfolio",
+    "viewOnGitHub": "Tazama kwenye GitHub"
+  },
+  "links": {
+    "title": "Viungo",
+    "subtitle": "Mkusanyiko wa wasifu wangu wa kitaalamu na rasilimali za kujifunza.",
+    "alwaysLearningTitle": "Daima Najifunza",
+    "alwaysLearningText": "Teknolojia haisimami — na mimi pia. Rasilimali hizi zinaniunganisha na jamii ya wasanidi na kukuwa daima.",
+    "github": {
+      "title": "GitHub",
+      "description": "Chunguza hazina zangu na fuata miradi yangu ya full stack — kutoka programu za MERN hadi API za Spring Boot na programu za simu za React Native.",
+      "label": "Tazama Wasifu wa GitHub"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Unganika nami kitaalamu. LinkedIn yangu inaonyesha mpito wangu kutoka usimamizi wa afya na elimu hadi maendeleo ya full stack.",
+      "label": "Tazama Wasifu wa LinkedIn"
+    },
+    "codeboxx": {
+      "title": "CodeBoxx Academy",
+      "description": "Bootcamp ya kina ya full stack nilipofunzwa. CodeBoxx inashughulikia MERN stack, Spring Boot, React Native, DevOps, na zaidi katika moduli 16.",
+      "label": "Tembelea CodeBoxx Academy"
+    }
+  },
+  "contact": {
+    "title": "Wasiliana",
+    "subtitle": "Ningependa kusikia kutoka kwako. Nitumie ujumbe na nitajibu haraka iwezekanavyo.",
+    "namePlaceholder": "Jina lako kamili",
+    "emailPlaceholder": "Anwani yako ya barua pepe",
+    "messagePlaceholder": "Ujumbe wako...",
+    "sendButton": "Tuma Ujumbe",
+    "sendingButton": "Inatuma...",
+    "successMessage": "Ujumbe wako umetumwa! Nitawasiliana nawe hivi karibuni.",
+    "errorMessage": "Hitilafu imetokea. Tafadhali jaribu tena.",
+    "validationError": "Tafadhali jaza sehemu zote kabla ya kutuma.",
+    "connectTitle": "Tuwasiliane",
+    "connectText": "Unapendelea kuwasiliana moja kwa moja? Nipate kwenye majukwaa haya."
+  },
+  "footer": {
+    "rights": "Haki zote zimehifadhiwa.",
+    "builtWith": "Imejengwa na React & Supabase"
+  }
+}
+

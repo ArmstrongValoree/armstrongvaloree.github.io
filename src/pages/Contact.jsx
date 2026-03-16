@@ -2,9 +2,11 @@ import { useState } from "react";
 import supabase from "../lib/supabaseClient";
 import heroImage from "../assets/contact-hero.png";
 import secondaryImage from "../assets/contact-secondary.png";
+import { useTranslation } from "../hooks/useTranslation";
 import "./Contact.css";
 
 function Contact() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,7 +25,7 @@ function Contact() {
     if (!formData.name || !formData.email || !formData.message) {
       setStatus({
         type: "error",
-        text: "Please fill in all fields before submitting.",
+        text: t.contact.validationError,
       });
       return;
     }
@@ -44,12 +46,12 @@ function Contact() {
     if (error) {
       setStatus({
         type: "error",
-        text: "Something went wrong. Please try again.",
+        text: t.contact.errorMessage,
       });
     } else {
       setStatus({
         type: "success",
-        text: "Your message has been sent! I will be in touch soon.",
+        text: t.contact.successMessage,
       });
       setFormData({ name: "", email: "", message: "" });
     }
@@ -59,12 +61,9 @@ function Contact() {
     <div className="contact-page">
       {/* Page Header */}
       <section className="contact-header">
-        <h1 className="contact-title">Contact</h1>
+        <h1 className="contact-title">{t.contact.title}</h1>
         <div className="contact-accent"></div>
-        <p className="contact-subtitle">
-          I would love to hear from you. Send me a message and I will get back
-          to you as soon as possible.
-        </p>
+        <p className="contact-subtitle">{t.contact.subtitle}</p>
       </section>
 
       {/* Form Section */}
@@ -77,16 +76,13 @@ function Contact() {
                 alt="Abstract illustration representing communication and connection"
               />
             </div>
-
             <div className="contact-form-wrapper">
               <h2 className="section-title">Send a Message</h2>
-
               {status && (
                 <div className={`status-message ${status.type}`}>
                   {status.text}
                 </div>
               )}
-
               <div className="contact-form">
                 <div className="form-group">
                   <label htmlFor="name" className="form-label">
@@ -99,10 +95,9 @@ function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     className="form-input"
-                    placeholder="Your full name"
+                    placeholder={t.contact.namePlaceholder}
                   />
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="email" className="form-label">
                     Email
@@ -114,10 +109,9 @@ function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     className="form-input"
-                    placeholder="your@email.com"
+                    placeholder={t.contact.emailPlaceholder}
                   />
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="message" className="form-label">
                     Message
@@ -128,17 +122,16 @@ function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     className="form-textarea"
-                    placeholder="Your message..."
+                    placeholder={t.contact.messagePlaceholder}
                     rows={6}
                   />
                 </div>
-
                 <button
                   onClick={handleSubmit}
                   className="btn-submit"
                   disabled={loading}
                 >
-                  {loading ? "Sending..." : "Send Message"}
+                  {loading ? t.contact.sendingButton : t.contact.sendButton}
                 </button>
               </div>
             </div>
@@ -151,13 +144,8 @@ function Contact() {
         <div className="page-center">
           <div className="secondary-layout">
             <div className="secondary-text">
-              <h2 className="section-title">Let's Connect</h2>
-              <p className="secondary-description">
-                Whether you have a project in mind, a question about my work, or
-                just want to say hello — my inbox is always open. You can also
-                find me on LinkedIn and GitHub where I share my latest projects
-                and professional updates.
-              </p>
+              <h2 className="section-title">{t.contact.connectTitle}</h2>
+              <p className="secondary-description">{t.contact.connectText}</p>
               <div className="contact-links">
                 <a
                   href="mailto:armstrongvaloree@gmail.com"

@@ -1,65 +1,32 @@
 // AI-generated images created using Microsoft Designer (designer.microsoft.com) and NanoBanana
 // Images: home-hero.png, home-skills.png
-
 import { Link } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
 import heroImage from '../assets/home-hero.png'
 import skillsImage from '../assets/home-skills.png'
 import avatar from '../assets/avatar.jpg'
+import { useTranslation } from '../hooks/useTranslation'
 import './Home.css'
 
-const technicalSkills = [
-  {
-    icon: '⚛️',
-    name: 'React & React Native',
-    description: 'Building dynamic, responsive web and mobile applications using component-based architecture and modern React hooks.'
-  },
-  {
-    icon: '🖥️',
-    name: 'Node.js & Express',
-    description: 'Developing scalable server-side applications and RESTful APIs that power full stack solutions.'
-  },
-  {
-    icon: '🗄️',
-    name: 'Database Management',
-    description: 'Designing and querying both relational databases (MySQL) and NoSQL databases (MongoDB) to store and manage application data.'
-  },
-  {
-    icon: '☕',
-    name: 'Java & Spring Boot',
-    description: 'Creating robust backend services and REST APIs using Java with the Spring Boot framework.'
-  },
-  {
-    icon: '🔐',
-    name: 'Authentication & Security',
-    description: 'Implementing secure user authentication using JWT tokens and Supabase Auth to protect application data.'
-  }
-]
+const skillKeys = ['react', 'node', 'database', 'java', 'auth']
+const skillIcons = {
+  react: '⚛️',
+  node: '🖥️',
+  database: '🗄️',
+  java: '☕',
+  auth: '🔐',
+}
 
-const softSkills = [
-  {
-    icon: '🤝',
-    name: 'Collaboration',
-    description: 'Over 15 years of experience working with diverse teams across healthcare, education, and social services to achieve shared goals.'
-  },
-  {
-    icon: '🧩',
-    name: 'Problem Solving',
-    description: 'Analytical thinker who breaks down complex challenges into clear, actionable steps — in code and in life.'
-  },
-  {
-    icon: '💬',
-    name: 'Communication',
-    description: 'Skilled at translating technical concepts for non-technical audiences, bridging the gap between people and technology.'
-  },
-  {
-    icon: '🎯',
-    name: 'Attention to Detail',
-    description: 'Meticulous and thorough in all work — from writing clean, readable code to managing complex administrative systems.'
-  }
-]
+const softSkillKeys = ['collaboration', 'problemSolving', 'communication', 'attention']
+const softSkillIcons = {
+  collaboration: '🤝',
+  problemSolving: '🧩',
+  communication: '💬',
+  attention: '🎯',
+}
 
 function Home() {
+  const { t } = useTranslation()
   const skillCardsRef = useRef([])
   const softCardsRef = useRef([])
 
@@ -75,21 +42,17 @@ function Home() {
       },
       { threshold: 0.15 }
     )
-
     skillCardsRef.current.forEach((card) => {
       if (card) observer.observe(card)
     })
-
     softCardsRef.current.forEach((card) => {
       if (card) observer.observe(card)
     })
-
     return () => observer.disconnect()
   }, [])
 
   return (
     <div className="home">
-
       {/* Hero Section */}
       <section className="home-intro">
         <img
@@ -105,18 +68,13 @@ function Home() {
               className="intro-avatar"
             />
           </div>
-          <h1 className="intro-name">Valoree Armstrong</h1>
+          <h1 className="intro-name">{t.home.name}</h1>
           <div className="intro-accent"></div>
-          <h2 className="intro-title">Full Stack Developer</h2>
-          <p className="intro-bio">
-            I am a Full Stack Developer with a background spanning healthcare, education,
-            and social services administration. After 15+ years of working at the intersection
-            of people and complex systems, I bring a unique perspective to software development —
-            one that keeps the end user at the center of every solution I build.
-          </p>
+          <h2 className="intro-title">{t.home.title}</h2>
+          <p className="intro-bio">{t.home.bio}</p>
           <div className="intro-buttons">
-            <Link to="/portfolio" className="btn-primary">View My Work</Link>
-            <Link to="/contact" className="btn-secondary">Get In Touch</Link>
+            <Link to="/portfolio" className="btn-primary">{t.home.viewWork}</Link>
+            <Link to="/contact" className="btn-secondary">{t.home.getInTouch}</Link>
           </div>
         </div>
       </section>
@@ -132,19 +90,19 @@ function Home() {
               />
             </div>
             <div className="skills-content">
-              <h2 className="section-title">Technical Skills</h2>
+              <h2 className="section-title">{t.home.technicalSkillsTitle}</h2>
               <div className="skills-grid">
-                {technicalSkills.map((skill, index) => (
+                {skillKeys.map((key, index) => (
                   <div
-                    key={skill.name}
+                    key={key}
                     className="skill-card slide-in"
                     ref={(el) => (skillCardsRef.current[index] = el)}
                     style={{ transitionDelay: `${index * 100}ms` }}
                   >
-                    <span className="skill-icon">{skill.icon}</span>
+                    <span className="skill-icon">{skillIcons[key]}</span>
                     <div>
-                      <h3 className="skill-name">{skill.name}</h3>
-                      <p className="skill-description">{skill.description}</p>
+                      <h3 className="skill-name">{t.home.skills[key].name}</h3>
+                      <p className="skill-description">{t.home.skills[key].description}</p>
                     </div>
                   </div>
                 ))}
@@ -157,24 +115,23 @@ function Home() {
       {/* Soft Skills Section */}
       <section className="home-soft-skills">
         <div className="page-center">
-          <h2 className="section-title centered">Strengths & Talents</h2>
+          <h2 className="section-title centered">{t.home.softSkillsTitle}</h2>
           <div className="soft-skills-grid">
-            {softSkills.map((skill, index) => (
+            {softSkillKeys.map((key, index) => (
               <div
-                key={skill.name}
+                key={key}
                 className="soft-skill-card slide-in"
                 ref={(el) => (softCardsRef.current[index] = el)}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <span className="soft-skill-icon">{skill.icon}</span>
-                <h3 className="skill-name">{skill.name}</h3>
-                <p className="skill-description">{skill.description}</p>
+                <span className="soft-skill-icon">{softSkillIcons[key]}</span>
+                <h3 className="skill-name">{t.home.softSkills[key].name}</h3>
+                <p className="skill-description">{t.home.softSkills[key].description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
-
     </div>
   )
 }

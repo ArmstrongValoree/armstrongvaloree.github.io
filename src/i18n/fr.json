@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "portfolio": "Portfolio",
+    "links": "Liens",
+    "contact": "Contact"
+  },
+  "home": {
+    "name": "Valoree Armstrong",
+    "title": "Développeuse Full Stack",
+    "bio": "Je suis développeuse full stack avec une expérience dans les domaines de la santé, de l'éducation et des services sociaux. Après plus de 15 ans à travailler à l'intersection des personnes et des systèmes complexes, j'apporte une perspective unique au développement logiciel — en plaçant toujours l'utilisateur final au centre de chaque solution que je construis.",
+    "technicalSkillsTitle": "Compétences Techniques",
+    "softSkillsTitle": "Points Forts & Talents",
+    "viewWork": "Voir Mon Travail",
+    "getInTouch": "Me Contacter",
+    "skills": {
+      "react": {
+        "name": "React & React Native",
+        "description": "Création d'applications web et mobiles dynamiques et réactives en utilisant une architecture basée sur les composants et les hooks React modernes."
+      },
+      "node": {
+        "name": "Node.js & Express",
+        "description": "Développement d'applications côté serveur évolutives et d'API RESTful qui alimentent des solutions full stack."
+      },
+      "database": {
+        "name": "Gestion de Bases de Données",
+        "description": "Conception et interrogation de bases de données relationnelles (MySQL) et NoSQL (MongoDB) pour stocker et gérer les données des applications."
+      },
+      "java": {
+        "name": "Java & Spring Boot",
+        "description": "Création de services backend robustes et d'API REST en utilisant Java avec le framework Spring Boot."
+      },
+      "auth": {
+        "name": "Authentification & Sécurité",
+        "description": "Mise en œuvre d'une authentification sécurisée des utilisateurs à l'aide de jetons JWT et de Supabase Auth pour protéger les données des applications."
+      }
+    },
+    "softSkills": {
+      "collaboration": {
+        "name": "Collaboration",
+        "description": "Plus de 15 ans d'expérience de travail avec des équipes diverses dans les domaines de la santé, de l'éducation et des services sociaux pour atteindre des objectifs communs."
+      },
+      "problemSolving": {
+        "name": "Résolution de Problèmes",
+        "description": "Penseur analytique qui décompose les défis complexes en étapes claires et réalisables — en code et dans la vie."
+      },
+      "communication": {
+        "name": "Communication",
+        "description": "Compétente pour traduire les concepts techniques pour les publics non techniques, comblant le fossé entre les personnes et la technologie."
+      },
+      "attention": {
+        "name": "Souci du Détail",
+        "description": "Méticuleuse et rigoureuse dans tout le travail — de l'écriture d'un code propre et lisible à la gestion de systèmes administratifs complexes."
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Un aperçu de ma formation, de mon parcours professionnel et des projets que j'ai réalisés.",
+    "educationTitle": "Formation",
+    "experienceTitle": "Expérience",
+    "projectsTitle": "Projets",
+    "resumeTitle": "CV",
+    "resumeText": "Téléchargez mon CV pour en savoir plus sur mon parcours et mon expérience.",
+    "downloadResume": "Télécharger le CV (PDF)",
+    "viewPortfolio": "Voir le Portfolio",
+    "viewOnGitHub": "Voir sur GitHub"
+  },
+  "links": {
+    "title": "Liens",
+    "subtitle": "Une sélection de mes profils professionnels et ressources d'apprentissage.",
+    "alwaysLearningTitle": "Toujours en Apprentissage",
+    "alwaysLearningText": "La technologie évolue sans cesse — et moi aussi. Ces ressources me gardent connectée à la communauté des développeurs et en croissance continue.",
+    "github": {
+      "title": "GitHub",
+      "description": "Explorez mes dépôts et suivez mes projets full stack — des applications MERN aux APIs Spring Boot et aux applications mobiles React Native.",
+      "label": "Voir le Profil GitHub"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Connectez-vous avec moi professionnellement. Mon LinkedIn met en valeur ma transition de l'administration de la santé et de l'éducation vers le développement full stack.",
+      "label": "Voir le Profil LinkedIn"
+    },
+    "codeboxx": {
+      "title": "CodeBoxx Academy",
+      "description": "Le bootcamp intensif full stack où je me suis formée. CodeBoxx couvre le stack MERN, Spring Boot, React Native, DevOps et plus encore sur 16 modules.",
+      "label": "Visiter CodeBoxx Academy"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Je serais ravie d'avoir de vos nouvelles. Envoyez-moi un message et je vous répondrai dès que possible.",
+    "namePlaceholder": "Votre nom complet",
+    "emailPlaceholder": "Votre adresse e-mail",
+    "messagePlaceholder": "Votre message...",
+    "sendButton": "Envoyer le Message",
+    "sendingButton": "Envoi en cours...",
+    "successMessage": "Votre message a été envoyé ! Je vous contacterai bientôt.",
+    "errorMessage": "Une erreur s'est produite. Veuillez réessayer.",
+    "validationError": "Veuillez remplir tous les champs avant d'envoyer.",
+    "connectTitle": "Restons en Contact",
+    "connectText": "Vous préférez me contacter directement ? Retrouvez-moi sur ces plateformes."
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "builtWith": "Construit avec React & Supabase"
+  }
+}
+
+

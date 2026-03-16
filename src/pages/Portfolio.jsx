@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import educationImage from "../assets/portfolio-education.png";
 import projectsImage from "../assets/portfolio-projects.png";
+import { useTranslation } from "../hooks/useTranslation";
 import "./Portfolio.css";
 
 const education = [
@@ -51,7 +52,7 @@ const projects = [
     description:
       "A full stack personal portfolio site with authentication, a contact form with database persistence, and an authenticated back office for message management.",
     link: "/",
-    linkLabel: "View Portfolio",
+    linkLabelKey: "viewPortfolio",
     external: false,
   },
   {
@@ -60,7 +61,7 @@ const projects = [
     description:
       "A full stack social media blogging application with user authentication, post feeds, comment modals, admin dashboard, and responsive navigation.",
     link: "https://github.com/armstrongvaloree",
-    linkLabel: "View on GitHub",
+    linkLabelKey: "viewOnGitHub",
     external: true,
   },
   {
@@ -69,7 +70,7 @@ const projects = [
     description:
       "A mobile food delivery app with a Spring Boot REST API backend, JWT authentication, and a React Native frontend for browsing restaurants and placing orders.",
     link: "https://github.com/armstrongvaloree",
-    linkLabel: "View on GitHub",
+    linkLabelKey: "viewOnGitHub",
     external: true,
   },
   {
@@ -78,12 +79,13 @@ const projects = [
     description:
       "An admin dashboard for managing elevator agents and transactions, featuring JWT authentication, CRUD operations, and Chart.js data visualizations.",
     link: "https://github.com/armstrongvaloree",
-    linkLabel: "View on GitHub",
+    linkLabelKey: "viewOnGitHub",
     external: true,
   },
 ];
 
 function Portfolio() {
+  const { t } = useTranslation();
   const cardRefs = useRef([]);
 
   useEffect(() => {
@@ -112,12 +114,9 @@ function Portfolio() {
     <div className="portfolio">
       {/* Page Header */}
       <section className="portfolio-header">
-        <h1 className="portfolio-title">Portfolio</h1>
+        <h1 className="portfolio-title">{t.portfolio.title}</h1>
         <div className="portfolio-accent"></div>
-        <p className="portfolio-subtitle">
-          A snapshot of my education, professional background, and the projects
-          I have built.
-        </p>
+        <p className="portfolio-subtitle">{t.portfolio.subtitle}</p>
       </section>
 
       {/* Education & Experience Section */}
@@ -133,7 +132,7 @@ function Portfolio() {
 
             <div className="background-content">
               <div className="timeline-block">
-                <h2 className="section-title">Education</h2>
+                <h2 className="section-title">{t.portfolio.educationTitle}</h2>
                 {education.map((item, index) => (
                   <div
                     key={index}
@@ -150,7 +149,7 @@ function Portfolio() {
               </div>
 
               <div className="timeline-block">
-                <h2 className="section-title">Experience</h2>
+                <h2 className="section-title">{t.portfolio.experienceTitle}</h2>
                 {experience.map((item, index) => (
                   <div
                     key={index}
@@ -175,7 +174,7 @@ function Portfolio() {
         <div className="page-center">
           <div className="projects-layout">
             <div className="projects-content">
-              <h2 className="section-title">Projects</h2>
+              <h2 className="section-title">{t.portfolio.projectsTitle}</h2>
               <div className="projects-grid">
                 {projects.map((project, index) => (
                   <div
@@ -186,9 +185,9 @@ function Portfolio() {
                   >
                     <h3 className="project-name">{project.name}</h3>
                     <div className="project-tech">
-                      {project.tech.map((t, i) => (
-                        <span key={t} className="tech-tag">
-                          {t}
+                      {project.tech.map((tech) => (
+                        <span key={tech} className="tech-tag">
+                          {tech}
                         </span>
                       ))}
                     </div>
@@ -200,11 +199,11 @@ function Portfolio() {
                         rel="noopener noreferrer"
                         className="project-link"
                       >
-                        {project.linkLabel}
+                        {t.portfolio[project.linkLabelKey]}
                       </a>
                     ) : (
                       <a href={project.link} className="project-link">
-                        {project.linkLabel}
+                        {t.portfolio[project.linkLabelKey]}
                       </a>
                     )}
                   </div>
@@ -225,14 +224,10 @@ function Portfolio() {
       {/* Resume Section */}
       <section className="portfolio-resume">
         <div className="page-center">
-          <h2 className="section-title centered">Resume</h2>
-          <p className="resume-text">
-            Download my full resume to learn more about my background, skills,
-            and experience.
-          </p>
-
+          <h2 className="section-title centered">{t.portfolio.resumeTitle}</h2>
+          <p className="resume-text">{t.portfolio.resumeText}</p>
           <a href="/resume.pdf" download className="btn-primary">
-            Download Resume (PDF)
+            {t.portfolio.downloadResume}
           </a>
         </div>
       </section>

@@ -1,6 +1,9 @@
+import { useTranslation } from "../hooks/useTranslation";
 import "./Footer.css";
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
       <div className="footer-inner">
@@ -26,7 +29,7 @@ function Footer() {
           </a>
         </div>
         <p className="footer-copy">
-          © {new Date().getFullYear()} Valoree Armstrong. All rights reserved.
+          © {new Date().getFullYear()} Valoree Armstrong. {t.footer.rights}
         </p>
       </div>
     </footer>

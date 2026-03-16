@@ -100,3 +100,34 @@
   padding: 0.2rem;
 }
 
+.language-switcher {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.lang-btn {
+  background: none;
+  border: 1px solid var(--color-card-border);
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  letter-spacing: 0.05em;
+}
+
+.lang-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.lang-btn.active {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background-color: var(--color-card-bg);
+}
+
+

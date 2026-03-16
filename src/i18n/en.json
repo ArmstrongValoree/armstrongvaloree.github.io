@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "links": "Links",
+    "contact": "Contact"
+  },
+  "home": {
+    "name": "Valoree Armstrong",
+    "title": "Full Stack Developer",
+    "bio": "I am a Full Stack Developer with a background spanning healthcare, education, and social services administration. After 15+ years of working at the intersection of people and complex systems, I bring a unique perspective to software development — one that keeps the end user at the center of every solution I build.",
+    "technicalSkillsTitle": "Technical Skills",
+    "softSkillsTitle": "Strengths & Talents",
+    "viewWork": "View My Work",
+    "getInTouch": "Get In Touch",
+    "skills": {
+      "react": {
+        "name": "React & React Native",
+        "description": "Building dynamic, responsive web and mobile applications using component-based architecture and modern React hooks."
+      },
+      "node": {
+        "name": "Node.js & Express",
+        "description": "Developing scalable server-side applications and RESTful APIs that power full stack solutions."
+      },
+      "database": {
+        "name": "Database Management",
+        "description": "Designing and querying both relational databases (MySQL) and NoSQL databases (MongoDB) to store and manage application data."
+      },
+      "java": {
+        "name": "Java & Spring Boot",
+        "description": "Creating robust backend services and REST APIs using Java with the Spring Boot framework."
+      },
+      "auth": {
+        "name": "Authentication & Security",
+        "description": "Implementing secure user authentication using JWT tokens and Supabase Auth to protect application data."
+      }
+    },
+    "softSkills": {
+      "collaboration": {
+        "name": "Collaboration",
+        "description": "Over 15 years of experience working with diverse teams across healthcare, education, and social services to achieve shared goals."
+      },
+      "problemSolving": {
+        "name": "Problem Solving",
+        "description": "Analytical thinker who breaks down complex challenges into clear, actionable steps — in code and in life."
+      },
+      "communication": {
+        "name": "Communication",
+        "description": "Skilled at translating technical concepts for non-technical audiences, bridging the gap between people and technology."
+      },
+      "attention": {
+        "name": "Attention to Detail",
+        "description": "Meticulous and thorough in all work — from writing clean, readable code to managing complex administrative systems."
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "A snapshot of my education, professional background, and the projects I have built.",
+    "educationTitle": "Education",
+    "experienceTitle": "Experience",
+    "projectsTitle": "Projects",
+    "resumeTitle": "Resume",
+    "resumeText": "Download my resume to learn more about my background and experience.",
+    "downloadResume": "Download Resume (PDF)",
+    "viewPortfolio": "View Portfolio",
+    "viewOnGitHub": "View on GitHub"
+  },
+  "links": {
+    "title": "Links",
+    "subtitle": "A curated collection of my professional profiles and learning resources.",
+    "alwaysLearningTitle": "Always Learning",
+    "alwaysLearningText": "Technology never stops evolving — and neither do I. These resources keep me connected to the developer community and continuously growing.",
+    "github": {
+      "title": "GitHub",
+      "description": "Explore my repositories and follow along as I build projects across the full stack — from MERN apps to Spring Boot APIs and React Native mobile apps.",
+      "label": "View GitHub Profile"
+    },
+    "linkedin": {
+      "title": "LinkedIn",
+      "description": "Connect with me professionally. My LinkedIn highlights my transition from healthcare and education administration into full stack development.",
+      "label": "View LinkedIn Profile"
+    },
+    "codeboxx": {
+      "title": "CodeBoxx Academy",
+      "description": "The intensive full stack bootcamp where I trained. CodeBoxx covers the MERN stack, Spring Boot, React Native, DevOps, and more across 16 modules.",
+      "label": "Visit CodeBoxx Academy"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "I would love to hear from you. Send me a message and I will get back to you as soon as possible.",
+    "namePlaceholder": "Your full name",
+    "emailPlaceholder": "Your email address",
+    "messagePlaceholder": "Your message...",
+    "sendButton": "Send Message",
+    "sendingButton": "Sending...",
+    "successMessage": "Your message has been sent! I will be in touch soon.",
+    "errorMessage": "Something went wrong. Please try again.",
+    "validationError": "Please fill in all fields before submitting.",
+    "connectTitle": "Let's Connect",
+    "connectText": "Prefer to reach out directly? Find me on any of these platforms."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with React & Supabase"
+  }
+}
+

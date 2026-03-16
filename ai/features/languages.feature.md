@@ -20,7 +20,7 @@ Allow visitors to switch between English and French on the portfolio site. All u
 ## Feature Scope
 
 ### In Scope
-- Support for English and French
+- Support for at least three languages — English, French, and Swahili
 - A language switcher accessible on every page via the Header
 - All user-facing text translated — navigation, headings, paragraphs, buttons, and labels
 - Language preference persisted in localStorage

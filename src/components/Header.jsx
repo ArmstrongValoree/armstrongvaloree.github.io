@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { useTranslation } from "../hooks/useTranslation";
 import "./Header.css";
 
 function Header() {
@@ -10,6 +11,8 @@ function Header() {
       ? "light"
       : "dark";
   });
+
+  const { t, language, switchLanguage } = useTranslation();
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -31,21 +34,49 @@ function Header() {
           />
         </Link>
         <nav className="desktop-nav">
-          <Link to="/">Home</Link>
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/links">Links</Link>
-          <Link to="/contact">Contact</Link>
-          <button className="theme-toggle" onClick={toggleTheme} title="Toggle theme">
+          <Link to="/">{t.nav.home}</Link>
+          <Link to="/portfolio">{t.nav.portfolio}</Link>
+          <Link to="/links">{t.nav.links}</Link>
+          <Link to="/contact">{t.nav.contact}</Link>
+          <div className="language-switcher">
+            <button
+              className={language === "en" ? "lang-btn active" : "lang-btn"}
+              onClick={() => switchLanguage("en")}
+            >
+              EN
+            </button>
+            <button
+              className={language === "fr" ? "lang-btn active" : "lang-btn"}
+              onClick={() => switchLanguage("fr")}
+            >
+              FR
+            </button>
+            <button
+              className={language === "sw" ? "lang-btn active" : "lang-btn"}
+              onClick={() => switchLanguage("sw")}
+            >
+              SW
+            </button>
+          </div>
+          <button
+            className="theme-toggle"
+            onClick={toggleTheme}
+            title="Toggle theme"
+          >
             {theme === "dark" ? "☀️" : "🌙"}
           </button>
         </nav>
       </div>
       <nav className="mobile-nav">
-        <Link to="/" title="Home">🏠</Link>
-        <Link to="/portfolio" title="Portfolio">📄</Link>
-        <Link to="/links" title="Links">🔗</Link>
-        <Link to="/contact" title="Contact">✉️</Link>
-        <button className="theme-toggle-mobile" onClick={toggleTheme} title="Toggle theme">
+        <Link to="/" title={t.nav.home}>🏠</Link>
+        <Link to="/portfolio" title={t.nav.portfolio}>📄</Link>
+        <Link to="/links" title={t.nav.links}>🔗</Link>
+        <Link to="/contact" title={t.nav.contact}>✉️</Link>
+        <button
+          className="theme-toggle-mobile"
+          onClick={toggleTheme}
+          title="Toggle theme"
+        >
           {theme === "dark" ? "☀️" : "🌙"}
         </button>
       </nav>
