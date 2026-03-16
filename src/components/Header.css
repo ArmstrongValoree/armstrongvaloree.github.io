@@ -84,7 +84,9 @@
   padding: 0.3rem 0.7rem;
   font-size: 1rem;
   cursor: pointer;
-  transition: border-color 0.3s ease, background-color 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease;
   background-color: var(--color-card-bg);
 }
 
@@ -115,7 +117,9 @@
   font-weight: 600;
   color: var(--color-text-muted);
   cursor: pointer;
-  transition: border-color 0.2s ease, color 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
   letter-spacing: 0.05em;
 }
 
@@ -130,4 +134,8 @@
   background-color: var(--color-card-bg);
 }
 
-
+.language-switcher-mobile {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}

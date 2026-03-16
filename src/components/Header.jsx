@@ -68,10 +68,18 @@ function Header() {
         </nav>
       </div>
       <nav className="mobile-nav">
-        <Link to="/" title={t.nav.home}>🏠</Link>
-        <Link to="/portfolio" title={t.nav.portfolio}>📄</Link>
-        <Link to="/links" title={t.nav.links}>🔗</Link>
-        <Link to="/contact" title={t.nav.contact}>✉️</Link>
+        <Link to="/" title={t.nav.home}>
+          🏠
+        </Link>
+        <Link to="/portfolio" title={t.nav.portfolio}>
+          📄
+        </Link>
+        <Link to="/links" title={t.nav.links}>
+          🔗
+        </Link>
+        <Link to="/contact" title={t.nav.contact}>
+          ✉️
+        </Link>
         <button
           className="theme-toggle-mobile"
           onClick={toggleTheme}
@@ -79,10 +87,29 @@ function Header() {
         >
           {theme === "dark" ? "☀️" : "🌙"}
         </button>
+        <div className="language-switcher-mobile">
+          <button
+            className={language === "en" ? "lang-btn active" : "lang-btn"}
+            onClick={() => switchLanguage("en")}
+          >
+            EN
+          </button>
+          <button
+            className={language === "fr" ? "lang-btn active" : "lang-btn"}
+            onClick={() => switchLanguage("fr")}
+          >
+            FR
+          </button>
+          <button
+            className={language === "sw" ? "lang-btn active" : "lang-btn"}
+            onClick={() => switchLanguage("sw")}
+          >
+            SW
+          </button>
+        </div>
       </nav>
     </header>
   );
 }
 
 export default Header;
-
