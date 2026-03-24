@@ -7,12 +7,36 @@
   },
   "home": {
     "name": "Valoree Armstrong",
-    "title": "Développeuse Full Stack",
-    "bio": "Je suis développeuse full stack avec une expérience dans les domaines de la santé, de l'éducation et des services sociaux. Après plus de 15 ans à travailler à l'intersection des personnes et des systèmes complexes, j'apporte une perspective unique au développement logiciel — en plaçant toujours l'utilisateur final au centre de chaque solution que je construis.",
-    "technicalSkillsTitle": "Compétences Techniques",
-    "softSkillsTitle": "Points Forts & Talents",
+    "title": "Développeuse Full Stack avec une Approche Centrée sur les Personnes",
+    "valueProposition": "Développeuse Full Stack spécialisée dans les applications web centrées sur l'utilisateur, construites avec React, Node.js et Spring Boot.",
+    "achievement1": "Conçu et déployé 10+ applications full-stack avec MERN, Spring Boot et React Native.",
+    "achievement2": "15+ ans d'amélioration des flux de travail dans les domaines de la santé, de l'éducation et des services sociaux.",
     "viewWork": "Voir Mon Travail",
     "getInTouch": "Me Contacter",
+    "aboutTitle": "À Propos de Moi",
+    "aboutText1": "Je suis développeuse full stack qui croit que les meilleurs logiciels sont construits avec autant de compétences techniques que d'empathie et de clarté. Avant de me lancer dans la tech, j'ai passé plus de 15 ans dans l'éducation, la santé et des rôles communautaires — des expériences qui ont façonné ma façon d'aborder la résolution de problèmes, la communication et la conception centrée sur l'utilisateur.",
+    "aboutText2": "Aujourd'hui, je construis des applications web avec React, Node.js et Spring Boot, et je suis passionnée par la création d'outils qui rendent le travail plus facile, plus intuitif et plus humain. Mon parcours me donne un avantage unique — je comprends comment les gens pensent, comment les équipes fonctionnent et comment la technologie peut vraiment améliorer les flux de travail quotidiens.",
+    "aboutItem1": "Code propre, maintenable et expériences utilisateur réfléchies",
+    "aboutItem2": "Communication claire et résolution collaborative des problèmes",
+    "aboutItem3": "Énergisée par l'apprentissage, l'enseignement et l'amélioration continue",
+    "aboutItem4": "Construire des solutions qui servent les vraies personnes",
+    "technicalSkillsTitle": "Compétences Techniques",
+    "softSkillsTitle": "Points Forts & Talents",
+    "featuredProjectsTitle": "Projets en Vedette",
+    "viewAllProjects": "Voir Tous les Projets",
+    "viewOnGitHub": "Voir sur GitHub",
+    "whyHireTitle": "Pourquoi Me Recruter",
+    "whyHireIntro": "Recruter un développeur, c'est plus que des compétences techniques — c'est trouver quelqu'un qui communique clairement, résout les problèmes avec soin et apporte de la fiabilité à chaque projet. C'est la norme que je me fixe.",
+    "whyHireText": "Je combine des compétences en développement full-stack avec plus de 15 ans d'expérience réelle dans le soutien aux équipes, l'amélioration des flux de travail et l'aide aux personnes pour comprendre des idées complexes.",
+    "whyHireItem1": "Une solide base en développement MERN et Spring Boot",
+    "whyHireItem2": "Communication claire et résolution collaborative des problèmes",
+    "whyHireItem3": "Un état d'esprit centré sur l'utilisateur façonné par des années de travail orienté service",
+    "whyHireItem4": "La capacité de mentorer, soutenir et élever les nouveaux apprenants et coéquipiers",
+    "whyHireItem5": "Un engagement envers un code propre, une conception réfléchie et une amélioration continue",
+    "whyHireClosing": "Si vous cherchez un développeur qui allie capacité technique, empathie, structure et un désir sincère de construire des solutions significatives — je suis prête à contribuer.",
+    "contactCTA": "Travaillons Ensemble",
+    "contactCTAText": "Je suis actuellement ouverte aux postes à temps plein, aux contrats et aux projets freelance.",
+    "contactCTAButton": "Me Contacter",
     "skills": {
       "react": {
         "name": "React & React Native",
@@ -106,5 +130,4 @@
     "builtWith": "Construit avec React & Supabase"
   }
 }
-
 

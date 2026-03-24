@@ -7,12 +7,36 @@
   },
   "home": {
     "name": "Valoree Armstrong",
-    "title": "Full Stack Developer",
-    "bio": "I am a Full Stack Developer with a background spanning healthcare, education, and social services administration. After 15+ years of working at the intersection of people and complex systems, I bring a unique perspective to software development — one that keeps the end user at the center of every solution I build.",
-    "technicalSkillsTitle": "Technical Skills",
-    "softSkillsTitle": "Strengths & Talents",
+    "title": "Full Stack Developer with a People-First Approach",
+    "valueProposition": "Full Stack Developer specializing in user-centered web applications built with React, Node.js, and Spring Boot.",
+    "achievement1": "Built and deployed 10+ full-stack applications using MERN, Spring Boot, and React Native.",
+    "achievement2": "15+ years improving workflows across healthcare, education, and social services.",
     "viewWork": "View My Work",
     "getInTouch": "Get In Touch",
+    "aboutTitle": "About Me",
+    "aboutText1": "I am a Full Stack Developer who believes that great software is built with equal parts technical skill, empathy, and clarity. Before transitioning into tech, I spent over 15 years working in education, healthcare, and community-focused roles — experiences that shaped the way I approach problem-solving, communication, and user-centered design.",
+    "aboutText2": "Today, I build web applications with React, Node.js, and Spring Boot, and I am passionate about creating tools that make work easier, more intuitive, and more human. My background gives me a unique advantage — I understand how people think, how teams operate, and how technology can genuinely improve everyday workflows.",
+    "aboutItem1": "Clean, maintainable code and thoughtful user experiences",
+    "aboutItem2": "Clear communication and collaborative problem-solving",
+    "aboutItem3": "Energized by learning, teaching, and continuous improvement",
+    "aboutItem4": "Building solutions that serve real people",
+    "technicalSkillsTitle": "Technical Skills",
+    "softSkillsTitle": "Strengths & Talents",
+    "featuredProjectsTitle": "Featured Projects",
+    "viewAllProjects": "View All Projects",
+    "viewOnGitHub": "View on GitHub",
+    "whyHireTitle": "Why Hire Me",
+    "whyHireIntro": "Hiring a developer is about more than technical skill — it is about finding someone who communicates clearly, solves problems thoughtfully, and brings reliability to every project. That is the standard I hold myself to.",
+    "whyHireText": "I combine full-stack development skills with 15+ years of real-world experience supporting teams, improving workflows, and helping people understand complex ideas. I am comfortable stepping into ambiguity, asking the right questions, and turning scattered requirements into structured, actionable solutions.",
+    "whyHireItem1": "A strong foundation in MERN and Spring Boot development",
+    "whyHireItem2": "Clear, consistent communication and collaborative problem-solving",
+    "whyHireItem3": "A user-centered mindset shaped by years of service-oriented work",
+    "whyHireItem4": "The ability to mentor, support, and uplift new learners and teammates",
+    "whyHireItem5": "A commitment to clean code, thoughtful design, and continuous improvement",
+    "whyHireClosing": "If you are looking for a developer who blends technical ability with empathy, structure, and a genuine desire to build meaningful solutions — I am ready to contribute.",
+    "contactCTA": "Let's Work Together",
+    "contactCTAText": "I am currently open to full-time roles, contract work, and freelance projects.",
+    "contactCTAButton": "Get In Touch",
     "skills": {
       "react": {
         "name": "React & React Native",
@@ -106,4 +130,3 @@
     "builtWith": "Built with React & Supabase"
   }
 }
-

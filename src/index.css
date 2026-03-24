@@ -1,14 +1,42 @@
 :root {
+  /* Typography */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color-scheme: dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #0d1b2a;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Color scheme */
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0d1b2a;
+
+  /* === DESIGN TOKENS === */
+
+  /* Accent */
+  --accent: #00AEEF;
+
+  /* Glow system — ONE definition, used everywhere */
+  --glow-color: #00AEEF;
+  --glow-thickness: 0 0 0 1px;
+  --glow-radius: 18px;
+  --glow-blur: 18px;
+  --glow: 0 0 var(--glow-blur) rgba(0, 174, 239, 0.45), var(--glow-thickness) rgba(0, 174, 239, 0.25);
+
+  /* Border */
+  --border-radius: 12px;
+  --border-color: rgba(0, 174, 239, 0.25);
+
+  /* Spacing rhythm */
+  --section-gap: 80px;
+  --title-gap: 40px;
+  --card-padding: 40px;
+
+  /* Backgrounds */
+  --bg-base: #0d1b2a;
+  --bg-card: #0a1628;
 }
 
 *, *::before, *::after {
@@ -20,6 +48,7 @@
 body {
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--bg-base);
 }
 
 #root {
@@ -43,22 +72,34 @@ p {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: transparent;
+  color: var(--accent);
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: box-shadow 0.25s, border-color 0.25s;
 }
 
 button:hover {
-  border-color: #00bfff;
+  border-color: var(--accent);
+  box-shadow: var(--glow);
 }
 
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+.section-title {
+  color: var(--accent);
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: var(--title-gap);
+  text-shadow: 0 0 12px rgba(0, 174, 239, 0.5);
+}
+
