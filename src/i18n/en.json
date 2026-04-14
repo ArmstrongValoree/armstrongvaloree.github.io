@@ -88,7 +88,8 @@
     "resumeText": "Download my resume to learn more about my background and experience.",
     "downloadResume": "Download Resume (PDF)",
     "viewPortfolio": "View Portfolio",
-    "viewOnGitHub": "View on GitHub"
+    "viewOnGitHub": "View on GitHub",
+    "viewSite": "View Live Site"
   },
   "links": {
     "title": "Links",

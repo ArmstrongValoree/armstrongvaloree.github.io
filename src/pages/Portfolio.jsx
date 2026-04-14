@@ -56,6 +56,15 @@ const projects = [
     external: false,
   },
   {
+    name: "Tin Box Heroes",
+    tech: ["React", "TypeScript", "Vite", "Supabase", "Tailwind CSS", "Cloudflare Workers"],
+    description:
+      "A full stack author website for Fire Chief and first responder advocate Ken Grimes. Features community discussion boards, book reviews with emoji reactions, user authentication, a media kit, events listings, and a serverless contact form — deployed on Cloudflare Workers.",
+    link: "https://tinboxheroes.com",
+    linkLabelKey: "viewSite",
+    external: true,
+  },
+  {
     name: "CodeBloggs",
     tech: ["MongoDB", "Express", "React", "Node.js"],
     description:

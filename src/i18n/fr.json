@@ -88,7 +88,8 @@
     "resumeText": "Téléchargez mon CV pour en savoir plus sur mon parcours et mon expérience.",
     "downloadResume": "Télécharger le CV (PDF)",
     "viewPortfolio": "Voir le Portfolio",
-    "viewOnGitHub": "Voir sur GitHub"
+    "viewOnGitHub": "Voir sur GitHub",
+    "viewSite": "Voir le Site en Direct"
   },
   "links": {
     "title": "Liens",
