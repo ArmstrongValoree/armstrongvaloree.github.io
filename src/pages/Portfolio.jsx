@@ -69,7 +69,7 @@ const projects = [
     tech: ["MongoDB", "Express", "React", "Node.js"],
     description:
       "A full stack social media blogging application with user authentication, post feeds, comment modals, admin dashboard, and responsive navigation.",
-    link: "https://github.com/armstrongvaloree",
+    link: "https://github.com/ArmstrongValoree/Module-Nine-Fullstack_Codebloggs",
     linkLabelKey: "viewOnGitHub",
     external: true,
     demoLink: "https://codebloggs-zdfw.onrender.com/",
@@ -80,7 +80,7 @@ const projects = [
     tech: ["Spring Boot", "MySQL", "React Native", "Expo"],
     description:
       "A mobile food delivery app with a Spring Boot REST API backend, JWT authentication, and a React Native frontend for browsing restaurants and placing orders.",
-    link: "https://github.com/armstrongvaloree",
+    link: "https://github.com/ArmstrongValoree/Module13-RocketFoodMobile",
     linkLabelKey: "viewOnGitHub",
     external: true,
   },
@@ -89,7 +89,7 @@ const projects = [
     tech: ["MongoDB", "Express", "React", "Chart.js"],
     description:
       "An admin dashboard for managing elevator agents and transactions, featuring JWT authentication, CRUD operations, and Chart.js data visualizations.",
-    link: "https://github.com/armstrongvaloree",
+    link: "https://github.com/ArmstrongValoree/Module-Eight-Rocket-Elevators",
     linkLabelKey: "viewOnGitHub",
     external: true,
     demoLink: "https://module-eight-rocket-elevators.onrender.com/login",
