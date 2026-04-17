@@ -89,7 +89,8 @@
     "downloadResume": "Download Resume (PDF)",
     "viewPortfolio": "View Portfolio",
     "viewOnGitHub": "View on GitHub",
-    "viewSite": "View Live Site"
+    "viewSite": "View Live Site",
+    "tryLiveDemo": "Try Live Demo"
   },
   "links": {
     "title": "Links",

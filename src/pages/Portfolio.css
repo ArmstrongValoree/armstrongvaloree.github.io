@@ -309,9 +309,15 @@
   }
 }
 
-.project-link {
-  display: inline-block;
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin-top: 0.75rem;
+  align-items: center;
+}
+
+.project-link {
   color: var(--color-primary);
   font-size: 0.875rem;
   font-weight: 600;
@@ -322,4 +328,19 @@
 
 .project-link:hover {
   border-bottom-color: var(--color-primary);
+}
+
+.project-link-demo {
+  color: var(--color-accent, var(--color-primary));
+  border: 1px solid var(--color-accent, var(--color-primary));
+  border-radius: 4px;
+  padding: 0.25rem 0.75rem;
+  border-bottom: 1px solid var(--color-accent, var(--color-primary));
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.project-link-demo:hover {
+  background-color: var(--color-accent, var(--color-primary));
+  color: var(--color-bg, #fff);
+  border-bottom-color: var(--color-accent, var(--color-primary));
 }

@@ -89,7 +89,8 @@
     "downloadResume": "Télécharger le CV (PDF)",
     "viewPortfolio": "Voir le Portfolio",
     "viewOnGitHub": "Voir sur GitHub",
-    "viewSite": "Voir le Site en Direct"
+    "viewSite": "Voir le Site en Direct",
+    "tryLiveDemo": "Essayer la Démo"
   },
   "links": {
     "title": "Liens",

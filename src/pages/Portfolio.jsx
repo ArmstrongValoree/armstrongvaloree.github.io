@@ -72,6 +72,8 @@ const projects = [
     link: "https://github.com/armstrongvaloree",
     linkLabelKey: "viewOnGitHub",
     external: true,
+    demoLink: "https://codebloggs-zdfw.onrender.com/",
+    demoLabelKey: "tryLiveDemo",
   },
   {
     name: "Rocket Food Delivery",
@@ -90,6 +92,8 @@ const projects = [
     link: "https://github.com/armstrongvaloree",
     linkLabelKey: "viewOnGitHub",
     external: true,
+    demoLink: "https://module-eight-rocket-elevators.onrender.com/login",
+    demoLabelKey: "tryLiveDemo",
   },
 ];
 
@@ -201,20 +205,32 @@ function Portfolio() {
                       ))}
                     </div>
                     <p className="project-description">{project.description}</p>
-                    {project.external ? (
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-link"
-                      >
-                        {t.portfolio[project.linkLabelKey]}
-                      </a>
-                    ) : (
-                      <a href={project.link} className="project-link">
-                        {t.portfolio[project.linkLabelKey]}
-                      </a>
-                    )}
+                    <div className="project-links">
+                      {project.external ? (
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="project-link"
+                        >
+                          {t.portfolio[project.linkLabelKey]}
+                        </a>
+                      ) : (
+                        <a href={project.link} className="project-link">
+                          {t.portfolio[project.linkLabelKey]}
+                        </a>
+                      )}
+                      {project.demoLink && (
+                        <a
+                          href={project.demoLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="project-link project-link-demo"
+                        >
+                          {t.portfolio[project.demoLabelKey]}
+                        </a>
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>
