@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
-import educationImage from "../assets/portfolio-education.png";
-import projectsImage from "../assets/portfolio-projects.png";
+import educationImage from "../assets/portfolio-education.webp";
+import projectsImage from "../assets/portfolio-projects.webp";
 import { useTranslation } from "../hooks/useTranslation";
 import "./Portfolio.css";
 
@@ -143,6 +143,7 @@ function Portfolio() {
               <img
                 src={educationImage}
                 alt="Abstract illustration representing education and career growth"
+                loading="lazy"
               />
             </div>
 
@@ -253,6 +254,7 @@ function Portfolio() {
               <img
                 src={projectsImage}
                 alt="Abstract illustration representing software projects and coding"
+                loading="lazy"
               />
             </div>
           </div>

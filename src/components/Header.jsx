@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useTranslation } from "../hooks/useTranslation";
 import "./Header.css";
@@ -13,6 +13,7 @@ function Header() {
   });
 
   const { t, language, switchLanguage } = useTranslation();
+  const { pathname } = useLocation();
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -34,10 +35,10 @@ function Header() {
           />
         </Link>
         <nav className="desktop-nav">
-          <Link to="/">{t.nav.home}</Link>
-          <Link to="/portfolio">{t.nav.portfolio}</Link>
-          <Link to="/links">{t.nav.links}</Link>
-          <Link to="/contact">{t.nav.contact}</Link>
+          <Link to="/" className={pathname === "/" ? "active-nav" : ""}>{t.nav.home}</Link>
+          <Link to="/portfolio" className={pathname === "/portfolio" ? "active-nav" : ""}>{t.nav.portfolio}</Link>
+          <Link to="/links" className={pathname === "/links" ? "active-nav" : ""}>{t.nav.links}</Link>
+          <Link to="/contact" className={pathname === "/contact" ? "active-nav" : ""}>{t.nav.contact}</Link>
           <div className="language-switcher">
             <button
               className={language === "en" ? "lang-btn active" : "lang-btn"}

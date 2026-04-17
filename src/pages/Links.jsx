@@ -1,5 +1,5 @@
-import heroImage from "../assets/links-hero.png";
-import secondaryImage from "../assets/links-secondary.png";
+import heroImage from "../assets/links-hero.webp";
+import secondaryImage from "../assets/links-secondary.webp";
 import { useTranslation } from "../hooks/useTranslation";
 import "./Links.css";
 
@@ -29,6 +29,7 @@ function Links() {
               <img
                 src={heroImage}
                 alt="Abstract illustration representing connections and resources"
+                loading="lazy"
               />
             </div>
             <div className="links-grid">
@@ -65,6 +66,7 @@ function Links() {
               <img
                 src={secondaryImage}
                 alt="Abstract illustration representing learning and knowledge sharing"
+                loading="lazy"
               />
             </div>
           </div>

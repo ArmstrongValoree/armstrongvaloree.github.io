@@ -1,9 +1,9 @@
 // AI-generated images created using Microsoft Designer (designer.microsoft.com) and NanoBanana
-// Images: home-hero.png, home-skills.png
+
 import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
-import heroImage from "../assets/home-hero.png";
-import skillsImage from "../assets/home-skills.png";
+import heroImage from "../assets/home-hero.webp";
+import skillsImage from "../assets/home-skills.webp";
 import avatar from "../assets/avatar.jpg";
 import { useTranslation } from "../hooks/useTranslation";
 import "./Home.css";
@@ -124,6 +124,7 @@ function Home() {
             <div className="skills-image">
               <img
                 src={skillsImage}
+                loading="lazy"
                 alt="Abstract circuit brain illustration representing technical skills"
               />
             </div>

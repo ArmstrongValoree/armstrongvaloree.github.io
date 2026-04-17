@@ -1,7 +1,7 @@
 import { useState } from "react";
 import supabase from "../lib/supabaseClient";
-import heroImage from "../assets/contact-hero.png";
-import secondaryImage from "../assets/contact-secondary.png";
+import heroImage from "../assets/contact-hero.webp";
+import secondaryImage from "../assets/contact-secondary.webp";
 import { useTranslation } from "../hooks/useTranslation";
 import "./Contact.css";
 
@@ -74,6 +74,7 @@ function Contact() {
               <img
                 src={heroImage}
                 alt="Abstract illustration representing communication and connection"
+                loading="lazy"
               />
             </div>
             <div className="contact-form-wrapper">
@@ -175,6 +176,7 @@ function Contact() {
               <img
                 src={secondaryImage}
                 alt="Abstract illustration representing digital outreach"
+                loading="lazy"
               />
             </div>
           </div>
