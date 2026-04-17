@@ -83,7 +83,7 @@ const projects = [
     link: "https://github.com/ArmstrongValoree/Module13-RocketFoodMobile",
     linkLabelKey: "viewOnGitHub",
     external: true,
-    demoLink: "https://expo.dev/accounts/armstrongvaloree/projects/Module13-RocketFoodMobile",
+    demoLink: "https://expo.dev/preview/update?message=Portfolio+demo&updateRuntimeVersion=1.0.0&createdAt=2026-04-17T11%3A55%3A29.551Z&slug=exp&projectId=a9cec3d5-afe8-4b36-8ea4-4320e1a3c8b0&group=037a1d1c-47ec-4d74-8107-9eb83070cc48",
     demoLabelKey: "tryLiveDemo",
     qrCode: "/rocket-food-qr.png",
   },
