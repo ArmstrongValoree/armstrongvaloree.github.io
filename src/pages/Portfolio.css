@@ -344,3 +344,24 @@
   color: var(--color-bg, #fff);
   border-bottom-color: var(--color-accent, var(--color-primary));
 }
+
+.project-qr {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.project-qr-label {
+  font-size: 0.75rem;
+  color: var(--color-text-muted, #aaa);
+  margin: 0;
+}
+
+.project-qr-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 6px;
+  border: 1px solid var(--color-primary);
+}

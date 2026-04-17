@@ -83,6 +83,7 @@ const projects = [
     link: "https://github.com/ArmstrongValoree/Module13-RocketFoodMobile",
     linkLabelKey: "viewOnGitHub",
     external: true,
+    qrCode: "/rocket-food-qr.png",
   },
   {
     name: "Rocket Elevators Dashboard",
@@ -231,6 +232,16 @@ function Portfolio() {
                         </a>
                       )}
                     </div>
+                    {project.qrCode && (
+                      <div className="project-qr">
+                        <p className="project-qr-label">Scan to try in Expo Go</p>
+                        <img
+                          src={project.qrCode}
+                          alt="Expo Go QR code for Rocket Food Delivery"
+                          className="project-qr-image"
+                        />
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
