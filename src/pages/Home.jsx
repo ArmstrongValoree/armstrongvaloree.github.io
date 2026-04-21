@@ -38,14 +38,25 @@ const featuredProjects = [
   //   description:
   //     "A full stack personal portfolio site with authentication, a contact form with database persistence, and an authenticated back office for message management.",
   //   link: "/",
+  //   linkLabelKey: "viewOnGitHub",
   //   external: false,
   // },
+  {
+    name: "Tin Box Heroes",
+    tech: ["React", "TypeScript", "Vite", "Supabase", "Tailwind CSS", "Cloudflare Workers"],
+    description:
+      "A full stack author website for Fire Chief and first responder advocate Ken Grimes. Features community discussion boards, book reviews, user authentication, a media kit, events listings, and a serverless contact form — deployed on Cloudflare Workers.",
+    link: "https://tinboxheroes.com",
+    linkLabelKey: "viewSite",
+    external: true,
+  },
   {
     name: "Rocket Food Delivery",
     tech: ["Spring Boot", "MySQL", "React Native", "Expo"],
     description:
       "A mobile food delivery app with a Spring Boot REST API backend, JWT authentication, and a React Native frontend for browsing restaurants and placing orders.",
     link: "https://github.com/armstrongvaloree",
+    linkLabelKey: "viewOnGitHub",
     external: true,
   },
 ];
@@ -210,11 +221,11 @@ function Home() {
                     rel="noopener noreferrer"
                     className="project-link"
                   >
-                    {t.home.viewOnGitHub}
+                    {t.home[project.linkLabelKey]}
                   </a>
                 ) : (
                   <a href={project.link} className="project-link">
-                    {t.home.viewOnGitHub}
+                    {t.home[project.linkLabelKey]}
                   </a>
                 )}
               </div>
