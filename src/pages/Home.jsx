@@ -31,14 +31,15 @@ const softSkillIcons = {
 };
 
 const featuredProjects = [
-  {
-    name: "Personal Portfolio",
-    tech: ["React", "Vite", "Supabase", "GitHub Actions"],
-    description:
-      "A full stack personal portfolio site with authentication, a contact form with database persistence, and an authenticated back office for message management.",
-    link: "/",
-    external: false,
-  },
+  // Uncomment and update once personal projects are ready to feature:
+  // {
+  //   name: "Personal Portfolio",
+  //   tech: ["React", "Vite", "Supabase", "GitHub Actions"],
+  //   description:
+  //     "A full stack personal portfolio site with authentication, a contact form with database persistence, and an authenticated back office for message management.",
+  //   link: "/",
+  //   external: false,
+  // },
   {
     name: "Rocket Food Delivery",
     tech: ["Spring Boot", "MySQL", "React Native", "Expo"],

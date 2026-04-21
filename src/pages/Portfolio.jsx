@@ -46,15 +46,16 @@ const experience = [
 ];
 
 const projects = [
-  {
-    name: "Personal Portfolio",
-    tech: ["React", "Vite", "Supabase", "GitHub Actions"],
-    description:
-      "A full stack personal portfolio site with authentication, a contact form with database persistence, and an authenticated back office for message management.",
-    link: "/",
-    linkLabelKey: "viewPortfolio",
-    external: false,
-  },
+  // Uncomment and update once personal projects are ready to feature:
+  // {
+  //   name: "Personal Portfolio",
+  //   tech: ["React", "Vite", "Supabase", "GitHub Actions"],
+  //   description:
+  //     "A full stack personal portfolio site with authentication, a contact form with database persistence, and an authenticated back office for message management.",
+  //   link: "/",
+  //   linkLabelKey: "viewPortfolio",
+  //   external: false,
+  // },
   {
     name: "Tin Box Heroes",
     tech: ["React", "TypeScript", "Vite", "Supabase", "Tailwind CSS", "Cloudflare Workers"],
