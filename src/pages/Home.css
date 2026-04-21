@@ -368,6 +368,46 @@
   text-shadow: 0 0 10px rgba(0, 174, 239, 0.6);
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-link-demo {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.project-link-demo:hover {
+  background-color: var(--accent);
+  color: #fff;
+  text-shadow: none;
+}
+
+.project-qr {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.project-qr-label {
+  font-size: 0.75rem;
+  color: var(--color-text-muted, #aaa);
+  margin: 0;
+}
+
+.project-qr-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 6px;
+}
+
 .featured-projects-cta {
   margin-top: 2rem;
   text-align: center;
