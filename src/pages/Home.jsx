@@ -2,7 +2,7 @@
 
 import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
-import heroImage from "../assets/home-hero.png";
+import heroImage from "../assets/home-hero.webp";
 import skillsImage from "../assets/home-skills.webp";
 import avatar from "../assets/avatar.png";
 import { useTranslation } from "../hooks/useTranslation";
