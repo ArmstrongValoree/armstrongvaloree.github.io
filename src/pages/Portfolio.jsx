@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import educationImage from "../assets/portfolio-education.webp";
 import projectsImage from "../assets/portfolio-projects.webp";
+import tinBoxHeroesMockup from "../assets/tinboxheroes-device-mockup.png";
 import { useTranslation } from "../hooks/useTranslation";
 import "./Portfolio.css";
 
@@ -58,6 +59,7 @@ const projects = [
   // },
   {
     name: "Tin Box Heroes",
+    image: tinBoxHeroesMockup,
     tech: ["React", "TypeScript", "Vite", "Supabase", "Tailwind CSS", "Cloudflare Workers"],
     description:
       "A full stack author website for Fire Chief and first responder advocate Ken Grimes. Features community discussion boards, book reviews with emoji reactions, user authentication, a media kit, events listings, and a serverless contact form — deployed on Cloudflare Workers.",
@@ -210,6 +212,15 @@ function Portfolio() {
                     ref={(el) => (cardRefs.current[cardIndex++] = el)}
                     style={{ transitionDelay: `${index * 100}ms` }}
                   >
+                    {project.image && (
+                      <div className="project-image-wrapper">
+                        <img
+                          src={project.image}
+                          alt={`${project.name} preview`}
+                          className="project-image"
+                        />
+                      </div>
+                    )}
                     <h3 className="project-name">{project.name}</h3>
                     <div className="project-tech">
                       {project.tech.map((tech) => (

@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react";
 import heroImage from "../assets/home-hero.webp";
 import skillsImage from "../assets/home-skills.webp";
 import avatar from "../assets/avatar.jpg";
+import tinBoxHeroesMockup from "../assets/tinboxheroes-device-mockup.png";
 import { useTranslation } from "../hooks/useTranslation";
 import "./Home.css";
 
@@ -43,6 +44,7 @@ const featuredProjects = [
   // },
   {
     name: "Tin Box Heroes",
+    image: tinBoxHeroesMockup,
     tech: ["React", "TypeScript", "Vite", "Supabase", "Tailwind CSS", "Cloudflare Workers"],
     description:
       "A full stack author website for Fire Chief and first responder advocate Ken Grimes. Features community discussion boards, book reviews, user authentication, a media kit, events listings, and a serverless contact form — deployed on Cloudflare Workers.",
@@ -217,6 +219,15 @@ function Home() {
                 ref={(el) => (sectionRefs.current[index + 2] = el)}
                 style={{ transitionDelay: `${index * 150}ms` }}
               >
+                {project.image && (
+                  <div className="project-image-wrapper">
+                    <img
+                      src={project.image}
+                      alt={`${project.name} preview`}
+                      className="project-image"
+                    />
+                  </div>
+                )}
                 <h3 className="project-name">{project.name}</h3>
                 <div className="project-tech">
                   {project.tech.map((tech) => (
