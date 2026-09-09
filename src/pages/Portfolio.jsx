@@ -272,6 +272,15 @@ function Portfolio() {
                     )}
                   </div>
                 ))}
+                <div className="project-card project-card--placeholder">
+                  <div className="project-placeholder-icon" aria-hidden="true">
+                    🚧
+                  </div>
+                  <h3 className="project-name">More Projects Coming Soon</h3>
+                  <p className="project-description">
+                    Additional personal projects will be added here.
+                  </p>
+                </div>
               </div>
             </div>
 
