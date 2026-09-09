@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 import heroImage from "../assets/home-hero.webp";
 import skillsImage from "../assets/home-skills.webp";
 import avatar from "../assets/avatar.jpg";
-import tinBoxHeroesMockup from "../assets/tinboxheroes-device-mockup.png";
+import tinBoxHeroesMockup from "../assets/tinboxheroes-device-mockup.webp";
 import rocketFoodMockup from "../assets/rocket-food-delivery-mockup.jpg";
 import { useTranslation } from "../hooks/useTranslation";
 import "./Home.css";
