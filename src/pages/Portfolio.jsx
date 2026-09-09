@@ -3,6 +3,7 @@ import educationImage from "../assets/portfolio-education.webp";
 import projectsImage from "../assets/portfolio-projects.webp";
 import tinBoxHeroesMockup from "../assets/tinboxheroes-device-mockup.png";
 import rocketFoodMockup from "../assets/rocket-food-delivery-mockup.jpg";
+import strongerTogetherMockup from "../assets/strongertogether-device-mockup.webp";
 import { useTranslation } from "../hooks/useTranslation";
 import "./Portfolio.css";
 
@@ -105,6 +106,7 @@ const projects = [
   },
   {
     name: "Stronger Together St. Pete Foundation",
+    image: strongerTogetherMockup,
     tech: ["Eleventy (11ty)", "Cloudflare Pages", "Resend API", "Vanilla JS", "GitHub"],
     description:
       "A 14-page marketing and informational site for the Stronger Together St. Pete Foundation and its flagship St. Pete CommUNITY Festival. Built with Eleventy (11ty) and deployed on Cloudflare Pages with automatic git-integrated deploys. Features a 266-photo festival gallery with lightbox viewing, a contact form with category-based email routing via Resend, and a newsletter signup with subscriber capture. Includes integrations for volunteering, sponsorship, vendor applications, and donations. Two lightweight Cloudflare Pages Functions handle all backend needs — no traditional server or database required.",
