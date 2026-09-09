@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import educationImage from "../assets/portfolio-education.webp";
 import projectsImage from "../assets/portfolio-projects.webp";
 import tinBoxHeroesMockup from "../assets/tinboxheroes-device-mockup.png";
+import rocketFoodMockup from "../assets/rocket-food-delivery-mockup.jpg";
 import { useTranslation } from "../hooks/useTranslation";
 import "./Portfolio.css";
 
@@ -80,6 +81,7 @@ const projects = [
   },
   {
     name: "Rocket Food Delivery",
+    image: rocketFoodMockup,
     tech: ["Spring Boot", "MySQL", "React Native", "Expo"],
     description:
       "A mobile food delivery app with a Spring Boot REST API backend, JWT authentication, and a React Native frontend for browsing restaurants and placing orders.",
