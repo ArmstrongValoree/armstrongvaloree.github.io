@@ -6,10 +6,7 @@ import "./Header.css";
 function Header() {
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem("theme");
-    if (saved) return saved;
-    return window.matchMedia("(prefers-color-scheme: light)").matches
-      ? "light"
-      : "dark";
+    return saved || "dark";
   });
 
   const { t, language, switchLanguage } = useTranslation();
