@@ -62,6 +62,15 @@ const featuredProjects = [
     demoLabelKey: "tryLiveDemo",
     qrCode: "/rocket-food-qr.svg",
   },
+  {
+    name: "Stronger Together St. Pete Foundation",
+    tech: ["Eleventy (11ty)", "Cloudflare Pages", "Resend API", "Vanilla JS"],
+    description:
+      "A 14-page JAMstack nonprofit site for the Stronger Together St. Pete Foundation and its flagship St. Pete CommUNITY Festival. Features a 266-photo gallery with lightbox viewing, contact form with category-based email routing, newsletter signup, and integrations for volunteering, sponsorship, and donations.",
+    link: "https://strongertogetherstpete.org",
+    linkLabelKey: "viewSite",
+    external: true,
+  },
 ];
 
 function Home() {

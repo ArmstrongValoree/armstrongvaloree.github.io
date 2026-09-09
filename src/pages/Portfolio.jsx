@@ -99,6 +99,15 @@ const projects = [
     demoLink: "https://module-eight-rocket-elevators.onrender.com/login",
     demoLabelKey: "tryLiveDemo",
   },
+  {
+    name: "Stronger Together St. Pete Foundation",
+    tech: ["Eleventy (11ty)", "Cloudflare Pages", "Resend API", "Vanilla JS", "GitHub"],
+    description:
+      "A 14-page marketing and informational site for the Stronger Together St. Pete Foundation and its flagship St. Pete CommUNITY Festival. Built with Eleventy (11ty) and deployed on Cloudflare Pages with automatic git-integrated deploys. Features a 266-photo festival gallery with lightbox viewing, a contact form with category-based email routing via Resend, and a newsletter signup with subscriber capture. Includes integrations for volunteering, sponsorship, vendor applications, and donations. Two lightweight Cloudflare Pages Functions handle all backend needs — no traditional server or database required.",
+    link: "https://strongertogetherstpete.org",
+    linkLabelKey: "viewSite",
+    external: true,
+  },
 ];
 
 function Portfolio() {
